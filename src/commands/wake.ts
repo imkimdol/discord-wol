@@ -10,8 +10,12 @@ module.exports = {
         await interaction.deferReply({ephemeral: true});
 
         try {
+            const owner_id = process.env.OWNER_ID;
+            if (!owner_id) return interaction.editReply('No specified owner ID.');
+            if (owner_id !== interaction.user.id) return interaction.editReply('You are not permitted to use this command.');
+
             const address = process.env.MAC_ADDRESS;
-            if (!address) throw new Error("No specified MAC address.");
+            if (!address) return interaction.editReply('No specified MAC address.');
 
             wol.wake(address);
             interaction.editReply('Sent wake packet.');
