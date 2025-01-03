@@ -13,8 +13,9 @@
 2. Add the bot to a server.
 3. Clone the repository.
 4. Create a `.env` file with the required tokens, IDs, and addresses (example below).
-5. Deploy the wake command to the specified server using `yarn run deploy` from the console.*
-6. Start the bot using `yarn run start` from the console.
+5. Install modules by typing `yarn install` into the console
+6. Deploy the wake command to the specified server by typing `yarn run deploy` into the console.*
+7. Start the bot by typing `yarn run start` into the console.
 
 *To deploy to ALL servers, use `yarn run deploy all` (NOT RECOMMENDED)
 
