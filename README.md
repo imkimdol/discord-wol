@@ -6,7 +6,6 @@
 
 - [Node.js](https://nodejs.org/) (Tested with v18.19.0)
 - [Yarn Classic](https://classic.yarnpkg.com/)
-- 
 
 ## Setup
 
